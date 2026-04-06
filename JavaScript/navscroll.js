@@ -16,3 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// Handle View More button click
+const viewMoreBtn = document.querySelector('.ViewMore');
+if (viewMoreBtn && !viewMoreBtn.classList.contains('nav-link')) {
+    viewMoreBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const aboutSection = document.querySelector('#about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+}
