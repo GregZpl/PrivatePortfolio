@@ -40,15 +40,16 @@ html {
     align-items: center;
     padding: 5px 40px; 
     box-shadow: 0 0 20px rgba(193, 18, 31, 0.2);
-    position: fixed; /* Stick to the top */
+    position: fixed;
     top: 0;           
     left: 0;          
     right: 0;         
     justify-content: right;
-    background-color: rgba(16, 16, 16, 0.95);
+    background-color: rgb(16, 16, 16);
+
+    z-index: 1000; 
+
     border-bottom: 2px solid transparent;
-    border-image: radial-gradient(circle, rgba(#c1121f) 5%, rgba(199,87,87,0) 20%) 1;
-    border-bottom: 2px solid transparent; 
     border-image: radial-gradient(circle, #c1121f 5%, rgba(199,87,87,0) 20%) 1;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -296,7 +297,7 @@ background: linear-gradient(
     letter-spacing: 1px;
 }
 
-/* ========== ABOUT ME SECTION - LEFT ALIGNED WITH UNDERLINE (BIGGER) ========== */
+/* ABOUT ME SECTION   */
 .about-section {
     padding: 100px 40px;
     max-width: 1100px;
@@ -374,4 +375,77 @@ background: linear-gradient(
     color: #c1121f;
     font-weight: 600;
     text-shadow: 0 0 4px rgba(193, 18, 31, 0.3);
+}
+
+
+#PreviousProjects {
+  text-align: center;
+}
+
+.PreviousProjects h1 {
+    font-size: 52px
+}
+
+.project-card {
+  position: relative;
+  width: 1300px;
+  height: auto;
+  margin: 40px auto;
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #0b0f14;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 20px;
+
+  color: white;
+background-color: ;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85) 0%,
+    rgba(0,0,0,0.6) 40%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
+/* Text styling */
+.project-overlay h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.project-overlay p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.project-card:hover .project-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.95),
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0)
+  );
 }
