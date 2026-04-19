@@ -544,7 +544,7 @@ label {
 }
 
 input, textarea {
-    width: 100%;
+    width: 90%;
     padding: 18px; 
     border-radius: 12px;
     border: 1px solid #333;
@@ -714,4 +714,234 @@ textarea {
     background: linear-gradient(135deg, #c1121f, #7a0c14);
     margin: 12px 0 0 325px;   /* match the title padding */
     border-radius: 2px;
+}
+
+
+/* Mobile View Styles - Add to your existing CSS file */
+
+@media (max-width: 768px) {
+  /* Logo */
+  .logo {
+    width: 200px;
+    translate: 20px 100px;
+    transform: rotate(-15deg);
+    opacity: 0.15;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .navbar h1 {
+    position: relative;
+    left: auto;
+    transform: none;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Main Section */
+  .main {
+    padding: 0 20px;
+  }
+
+  .main h1 {
+    font-size: 32px;
+  }
+
+  .main h2 {
+    font-size: 18px;
+    margin-top: -15px;
+  }
+
+  
+  /* View More Button */
+  .ViewMore {
+    width: 120px;
+    height: 45px;
+    margin: 30px auto 50px auto;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 50px 20px;
+  }
+
+  .about-title {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .about-title:after {
+    width: 100px;
+    margin: 12px auto 0 auto;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+
+  .about-p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Projects Section */
+  .PreviousProjects h1 {
+    font-size: 32px;
+  }
+
+  .PreviousProjects h1:after {
+    width: 200px;
+    margin: 10px auto 0 auto;
+  }
+
+  .project-card {
+    width: calc(100% - 40px);
+    max-width: 450px;
+    margin: 25px auto;
+  }
+
+  .project-overlay {
+    padding: 15px;
+  }
+
+  .project-overlay h3 {
+    font-size: 16px;
+  }
+
+  .project-overlay p {
+    font-size: 12px;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact h1 {
+    font-size: 38px;
+  }
+
+  .contact h1:after {
+    width: 150px;
+    margin: 12px auto 0 auto;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  form {
+    padding: 25px 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  input, textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  .contact button {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 60px;
+    padding: 40px 20px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-left p {
+    margin: 10px auto;
+  }
+
+  .footer-title {
+    margin-left: 0;
+  }
+
+  .footer-center,
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer a {
+    justify-content: center;
+  }
+}
+
+/* Extra Small Devices (phones under 480px) */
+@media (max-width: 480px) {
+  .logo {
+    width: 150px;
+    translate: 10px 80px;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .main h1 {
+    font-size: 26px;
+  }
+
+  .main h2 {
+    font-size: 16px;
+  }
+
+  .about-title {
+    font-size: 34px;
+  }
+
+  .PreviousProjects h1 {
+    font-size: 26px;
+  }
+
+  .project-card {
+    width: calc(100% - 30px);
+  }
+
+  .contact h1 {
+    font-size: 30px;
+  }
+
+  form {
+    padding: 20px 15px;
+  }
 }
