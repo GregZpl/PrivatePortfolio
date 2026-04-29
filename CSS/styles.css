@@ -293,18 +293,17 @@ background: linear-gradient(
 }
 
 .PreviousProjects h1 {
-    font-size: 40px;
-    color: #ffffff;
-    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
 }
 
 .PreviousProjects h1:after {
     content: "";
     display: block;
-    width: 500px;
-    height: 7px;
+    width: 60%;
+    height: 6px;
+    margin: 10px auto 0 auto;
     background: linear-gradient(135deg, #c1121f, #7a0c14);
-    margin: 12px 0 0 1000px;   /* match the title padding */
     border-radius: 2px;
 }
 
